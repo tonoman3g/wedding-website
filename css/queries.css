@@ -226,7 +226,7 @@
         padding: 0 20px;
     }
     
-    #eng-pics .img-wrap {
+    #gallery .img-wrap {
         border-radius: 0;
     }
 
@@ -257,7 +257,7 @@
         padding-top: 100%;
     }
 
-    #eng-pics .img-wrap i {
+    #gallery .img-wrap i {
         font-size: 25px;
         position: absolute;
         width: 25px;
