@@ -170,9 +170,18 @@ $(document).ready(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
+    $('#btn-show-map-church').click(function () {
+        $('#map-content-church').toggleClass('toggle-map-content-church');
+        $('#btn-show-content-church').toggleClass('toggle-map-content-church');
+    });
+    
     $('#btn-show-content').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-content-church').click(function () {
+        $('#map-content-church').toggleClass('toggle-map-content-church');
+        $('#btn-show-content-church').toggleClass('toggle-map-content-church');
     });
 
     /********************** Add to Calendar **********************/

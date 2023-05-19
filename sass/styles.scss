@@ -41,6 +41,7 @@ body {
   font-weight: $light;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
+  background-color: $bg-color;
   //fix for iOS
 }
 *:focus {
@@ -269,10 +270,12 @@ Hero
   }
   h1 {
     color: $txt-light;
+    text-shadow: -1px 0 #643e04, 0 1px #643e04, 1px 0 #643e04, 0 -1px #643e04;
     margin-bottom: 40px;
   }
   p.intro {
-    color: $txt-light;
+    // color: $txt-light;
+    color: $txt-primary;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px;
@@ -293,7 +296,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: $header-color;
   z-index: 999;
   width: 100%;
 }
@@ -552,6 +555,12 @@ Features-stack
 .events
 ========================================================================== */
 .events {
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
@@ -765,6 +774,7 @@ Google map
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
+
 #btn-show-content {
   padding: 20px;
   background: #fff;
@@ -777,6 +787,30 @@ Google map
   opacity: 0;
   visibility: hidden;
 }
+
+
+#map-content-church {
+  margin-top: 40px;
+  padding: 50px 60px;
+  background: #fff;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+
+#btn-show-content-church {
+  padding: 20px;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+.toggle-map-content-church {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 .pointer-events-none {
   pointer-events: none;
 }
