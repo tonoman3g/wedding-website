@@ -239,6 +239,15 @@
         padding: 35px;
     }
 
+    #map-content-church-wrapper {
+        margin-bottom: 40px;
+    }
+    
+    #map-content-church {
+        margin-top: 0;
+        padding: 35px;
+    }
+
     .rsvp {
         padding-top: 40px;
     }

@@ -250,8 +250,24 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: -8.5986343, lng: 115.0726565};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 15,
+        center: location,
+        scrollwheel: false
+    });
+
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+
+    initChurchMap();
+}
+
+function initChurchMap() {
+    var location = {lat: -8.8003967, lng: 115.2111645};
+    var map = new google.maps.Map(document.getElementById('map-canvas-church'), {
         zoom: 15,
         center: location,
         scrollwheel: false
@@ -263,8 +279,9 @@ function initMap() {
     });
 }
 
+
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: -8.5986343, lng: 115.0726565};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
