@@ -865,7 +865,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa-user, i.fa-users, i.fa-envelope, i.fa-question-circle, i.fa-whatsapp, .fa-key {
         font-size: 14px;
         position: absolute;
         top: 50%;
@@ -881,6 +881,8 @@ RSVP form
         border-radius: 6px;
         border: none;
       }
+      
+
       input::-webkit-input-placeholder {
         color: $form-placeholder;
       }
@@ -891,6 +893,30 @@ RSVP form
         color: $form-placeholder;
       }
       input:-ms-input-placeholder {
+        color: $form-placeholder;
+      }
+
+      select {
+        padding-left: 68px;
+        padding-right: 10px;
+        width: 100%;
+        height: 100%;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
+      }
+
+      select::-webkit-input-placeholder {
+        color: $form-placeholder;
+      }
+      select:-moz-placeholder {
+        color: $form-placeholder;
+      }
+      select::-moz-placeholder {
+        color: $form-placeholder;
+      }
+      select:-ms-input-placeholder {
         color: $form-placeholder;
       }
     }

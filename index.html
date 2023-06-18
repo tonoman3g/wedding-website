@@ -392,16 +392,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of XXX '2023</p>
+                <h3>Please confirm your attendance?</h3>
+                <p>Because of limited seats, We would greatly appreciate if you could confirm before. After confirming, we will send you the confirmation about availability of the seats.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
+                                <i class="fa fa-whatsapp"></i><input type="phone" name="phone" class=""
+                                                                     placeholder="Whatsapp / Phone"
                                                                      required>
                             </div>
                         </div>
@@ -416,10 +416,23 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
+                                <i class="fa fa-users"></i>
+                                <!-- <input type="number" name="extras" class="" min="0"
+                                                                  max="1"
+                                                                  placeholder="Plus one? "
+                                                                  required> -->
+                                <select name="extras" id="extras" required>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-question-circle"></i><input  name="notes" id="notes"
+                                                                class=""
+                                                                placeholder="Question or notes"
+                                                                >
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
