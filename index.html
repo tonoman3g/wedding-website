@@ -392,8 +392,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Please confirm your attendance?</h3>
-                <p>Because of limited seats, We would greatly appreciate if you could confirm before. After confirming, we will send you the confirmation about availability of the seats.</p>
+                <h3>RSVP</h3>
+                <p>Due to limited seating at our venue, we regretfully cannot accommodate everyone we hold dear. We apologize for any inconvenience caused by this difficult decision. To help us make the necessary arrangements, please fill this form by 30 June 2023.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -415,7 +415,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
+                            <div class="form-input-group" style="padding-right: 8px;">
                                 <i class="fa fa-users"></i>
                                 <!-- <input type="number" name="extras" class="" min="0"
                                                                   max="1"
@@ -423,7 +423,21 @@
                                                                   required> -->
                                 <select name="extras" id="extras" required>
                                     <option value="0">0</option>
-                                    <option value="1">1</option>
+                                    <option value="1">Come with plus one</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" style="padding-right: 8px;">
+                                <i class="fa fa-heart"></i>
+                                <!-- <input type="number" name="extras" class="" min="0"
+                                                                  max="1"
+                                                                  placeholder="Plus one? "
+                                                                  required> -->
+                                <select name="attending" id="attending" required>
+                                    <option value="0">Attend Holy Matrimony Only</option>
+                                    <option value="1">Attend Reception Only</option>
+                                    <option value="2">Attend Both</option>
                                     </select>
                             </div>
                         </div>
