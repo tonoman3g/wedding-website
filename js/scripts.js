@@ -164,6 +164,8 @@ $(document).ready(function () {
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
+    /********************** Embed audio *********************/
+    $('.ost').get(0).play()
 
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {
