@@ -165,7 +165,9 @@ $(document).ready(function () {
     $('.player').YTPlayer();
 
     /********************** Embed audio *********************/
-    $('.ost').get(0).play()
+    var ost = $('.ost').get(0);
+    ost.muted = true;
+    ost.play()
 
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {
