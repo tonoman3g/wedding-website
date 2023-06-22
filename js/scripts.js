@@ -225,6 +225,15 @@ $(document).ready(function () {
     $('#add-to-cal').html(myCalendar);
 
 
+    $('#extras').on('change', function () {
+        if(this.value === "1"){
+            $("#extra-guest").show();
+        } else {
+            $("#extra-guest").hide();
+            $("#input-extra-guest").val("");
+        }
+    });
+
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
@@ -259,15 +268,16 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
+    
     var location = {lat: -8.5986343, lng: 115.0726565};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
         scrollwheel: false
     });
-
+    
     var marker = new google.maps.Marker({
-        position: location,
+        position: {lat: -8.598610002064218, lng: 115.07522948500379 },
         map: map
     });
 
