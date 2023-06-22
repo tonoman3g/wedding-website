@@ -276,6 +276,7 @@ function initMap() {
 
 function initChurchMap() {
     var location = {lat: -8.8003967, lng: 115.2111645};
+    
     var map = new google.maps.Map(document.getElementById('map-canvas-church'), {
         zoom: 15,
         center: location,
@@ -289,8 +290,8 @@ function initChurchMap() {
 }
 
 
-function initBBSRMap() {
-    var la_fiesta = {lat: -8.5986343, lng: 115.0726565};
+function initBBSRMap() {    
+    var la_fiesta = {lat: -8.59765820529571, lng: 115.07536004207512};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
