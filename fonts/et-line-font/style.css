@@ -1,11 +1,22 @@
 @font-face {
 	font-family: 'et-line';
-	src:url('fonts/Savoye LET Plain.ttf');
 	src:url('fonts/et-line.eot');
 	src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
 		url('fonts/et-line.woff') format('woff'),
 		url('fonts/et-line.ttf') format('truetype'),
 		url('fonts/et-line.svg#et-line') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SavoyeLetPlain';
+	src:url('fonts/Savoye LET Plain.ttf');
+	src:url('fonts/Savoye LET Plain1.0.woff') format('woff');
+	/* url('fonts/et-line.eot?#iefix') format('embedded-opentype'), */
+		
+		/* url('fonts/et-line.ttf') format('truetype'),
+		url('fonts/et-line.svg#et-line') format('svg'); */
 	font-weight: normal;
 	font-style: normal;
 }
