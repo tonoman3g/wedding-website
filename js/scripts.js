@@ -161,13 +161,18 @@ $(document).ready(function () {
         share_bar[i].style.display = 'inline-block';
     }
 
+    /***** Envelope */
+    $('#envelope-modal').modal('show');
+
+
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
     /********************** Embed audio *********************/
-    var ost = $('.ost').get(0);
-    ost.muted = true;
-    ost.play()
+    $("#open-envelope").click(function(){
+        var ost = $('.ost').get(0);
+        ost.play()
+      });
 
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {

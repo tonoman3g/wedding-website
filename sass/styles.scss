@@ -248,6 +248,7 @@ Navigation
   transition: all 300ms ease-in-out;
 }
 
+
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -731,6 +732,72 @@ Gallery Pics
   }
 }
 
+/**
+Envelope
+*/
+
+#envelope-modal {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#envelope-modal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#envelope-modal .modal-body {
+  padding: 0px;
+  text-align: center;
+}
+
+#envelope-modal .modal-content {
+  border: none;
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+
+.open-invitation {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -70%);
+  transform: translate(-50%, -70%);
+
+  border-radius: 20px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+}
+
+.open-invitation .fa {
+  background: white;
+
+}
+
+.open-invitation button{
+  background: white;
+  border: none;
+  font-weight: bold;
+}
+
+.envelope-hero {
+  min-height: 750px;
+  background: url('../img/envelope.jpg') bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 /* ==========================================================================
 Embed video
 ========================================================================== */
@@ -965,8 +1032,11 @@ footer {
 Bootstrap override
 ========================================================================== */
 body.modal-open {
+  height: 100vh;
   padding-right:0 !important;
+  overflow-y: hidden;
 }
+
 .modal-body {
   padding:25px;
 }
