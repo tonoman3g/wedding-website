@@ -205,14 +205,14 @@ $(document).ready(function () {
             title: "Hartono and Livia's Wedding",
 
             // Event start date
-            start: new Date('Oct 1, 2023 19:00 UTC+8'),
+            start: new Date('Oct 1, 2023 18:00 UTC+8'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Oct 1, 2023 21:00 UTC+8'),
+            end: new Date('Oct 1, 2023 21:30 UTC+8'),
 
             // Event Address
             address: 'Bali Beach Glamping, Jl. Kebo Iwa Jl. Batu Tampih Kangin No.Banjar, Pangkung Tibah, Kec. Kediri, Kabupaten Tabanan, Bali 82121',
