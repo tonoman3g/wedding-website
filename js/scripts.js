@@ -162,6 +162,7 @@ $(document).ready(function () {
     }
 
     /***** Envelope */
+    $("#play-ost").hide();
     $('#envelope-modal').modal('show');
 
 
@@ -172,6 +173,20 @@ $(document).ready(function () {
     $("#open-envelope").click(function(){
         var ost = $('.ost').get(0);
         ost.play()
+      });
+
+      $("#mute-ost").click(function(){
+        var ost = $('.ost').get(0);
+        ost.muted = true
+        $("#mute-ost").hide();
+        $("#play-ost").show();
+      });
+
+      $("#play-ost").click(function(){
+        var ost = $('.ost').get(0);
+        ost.muted = false
+        $("#mute-ost").show();
+        $("#play-ost").hide();
       });
 
     /********************** Toggle Map Content **********************/
