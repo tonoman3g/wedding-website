@@ -172,7 +172,7 @@ $(document).ready(function () {
     /********************** Embed audio *********************/
     $("#open-envelope").click(function(){
         var ost = $('.ost').get(0);
-        ost.play()
+        // ost.play()
       });
 
       $("#mute-ost").click(function(){
